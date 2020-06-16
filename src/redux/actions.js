@@ -18,7 +18,7 @@ export const fetchMakes = () => {
     fetch(url)
         .then(response => response.json())
         .then((response) => {
-            console.log("FETCHING")
+            // console.log("FETCHING", response.Results)
             return {
                 type: 'FETCH_MAKES',
                 value: response.Results
